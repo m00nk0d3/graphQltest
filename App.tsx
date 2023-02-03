@@ -1,18 +1,21 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import {View, Text} from 'react-native';
-const App = () => {
+import {View, Text, StyleSheet} from 'react-native';
+
+type Props = {};
+const App: React.FC<Props> = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Hello, World!</Text>
+    <View style={styles.container}>
+      <Text>Hello World</Text>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
 
 export default App;
